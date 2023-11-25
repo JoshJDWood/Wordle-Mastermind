@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WordleProject/Wordle.css">
+    <script src="https://kit.fontawesome.com/a9a777d1bf.js" crossorigin="anonymous"></script>
+    <title>Wordle</title>
+</head>
+<body>
+    <header>
+        <button class="sideButton" id="sideMenuButton">
+            <i class="fa-solid fa-bars fa"></i>
+        </button>
+        <h1 id="title">Wordle Mastermind</h1>
+        <button class="sideButton" id="invisableButton">
+            <i class="fa-solid fa-bars fa"></i>
+        </button>
+    </header>
+
+    <div id="sideMenu">
+        <h3>Welcome to Wordle Mastermind</h3>
+        <p>In this game you must guess the 5 letter word. For each guess you give you will receive a green box for a correct letter in the correct space and a yellow square for a correct letter in the incorrect space. Use these hints to help you decipher the target word. </p>
+        <p>Right click on the letters in the guesses and keyboard to change their colour. I suggest colour coding:</p>
+        <ul>
+            <li>GREY for Incorrect letters</li>
+            <li>YELLOW for Correct letter</li>
+            <li>GREEN for Correct letters in the correct position</li>
+        </ul>
+    </div>
+
+    <div id="gameBoard"></div>
+
+    <div id="keyboard">
+        <div class="firstRow">
+            <button class="keyboardButton">w</button>
+            <button class="keyboardButton">e</button>
+            <button class="keyboardButton">r</button>
+            <button class="keyboardButton">t</button>
+            <button class="keyboardButton">y</button>
+            <button class="keyboardButton">q</button>
+            <button class="keyboardButton">u</button>
+            <button class="keyboardButton">i</button>
+            <button class="keyboardButton">o</button>
+            <button class="keyboardButton">p</button>
+        </div>
+        <div class="secondRow">
+            <button class="keyboardButton">a</button>
+            <button class="keyboardButton">s</button>
+            <button class="keyboardButton">d</button>
+            <button class="keyboardButton">f</button>
+            <button class="keyboardButton">g</button>
+            <button class="keyboardButton">h</button>
+            <button class="keyboardButton">j</button>
+            <button class="keyboardButton">k</button>
+            <button class="keyboardButton">l</button>
+        </div>
+        <div class="thirdRow">
+            <button class="keyboardButton">Del</button>
+            <button class="keyboardButton">z</button>
+            <button class="keyboardButton">x</button>
+            <button class="keyboardButton">c</button>
+            <button class="keyboardButton">v</button>
+            <button class="keyboardButton">b</button>
+            <button class="keyboardButton">n</button>
+            <button class="keyboardButton">m</button>
+            <button class="keyboardButton">Enter</button>
+        </div>
+    </div>
+    
+    <script src="/WordleProject/Wordle.js"></script>
+</body>
+</html>
