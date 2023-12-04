@@ -2,24 +2,22 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
 #title{
     text-align: center;
     display: inline;
 }
 
 .sideButton{
-    font-size: 2rem;
+    font-size: 2em;
     border-radius: 3px;
     padding: 0px 20px;
+    margin: 10px 0px;
     background-color: antiquewhite;
 }
 
 #invisableButton{
     visibility: hidden;
-}
-
-body{
-    background-color: antiquewhite;
 }
 
 #sideMenu{
@@ -29,13 +27,11 @@ body{
     position: absolute;
     background-color: antiquewhite;
     border: 2px solid black;
-
+    
 }
 
-@media (max-width: 600px){
-    #sideMenu{
-        width: 80%;
-    }
+body{
+    background-color: antiquewhite;
 }
 
 #gameBoard {
@@ -65,11 +61,11 @@ body{
 }
 
 .scoreContainer{
-    width: 8rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
     justify-content: center;
-    align-items: center;    
-    flex-wrap: wrap;
+    align-items: center; 
 }
   
 .filledBox {
@@ -86,7 +82,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
 #keyboard div {
     display: flex;
@@ -104,4 +100,33 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     background-color: #E9CFAF;
+}
+
+@media (max-width: 600px){
+    #sideMenu{
+        width: 80%;
+        padding: 7%;
+    }
+
+    .letterRow{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .letterBox{        
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .scoreBox{
+        height: 1.1rem;
+        width: 1.1rem;
+        margin: 1px;
+    }
+
+    .keyboardButton{
+        font-size: 0.85rem;
+    }
 }
